@@ -1,0 +1,111 @@
+/*General style of the website*/
+body{background-color: #FFFFFF;
+    color: #BB0D0D;
+    font-size: 16px;
+    font-family: "Open-Sans", "sans-serif";
+}
+nav{display:block;
+    border-bottom: solid;
+    border-width: 2px;
+    padding: 2px;
+    padding-bottom: 4px;
+    margin: 2px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Muli", "sans-serif";
+}
+nav a{text-decoration: none;
+    color: #FF0000;}
+    a:visited{color: #EE0000
+    }
+header{display:block;
+    padding: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+a {text-decoration: none;
+    color: #DD0000;
+}
+a:visited{color: #CC0000
+}
+section{display:block;
+}
+footer{clear:both;
+}
+
+/*Class style of the initial page*/
+.imgLogo{margin-bottom: 4px;
+    padding-bottom: 4px;
+}
+.apres{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.menu{margin: 1px auto;
+}
+.botao{display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+    width: 100px;
+}
+.ender{text-align: center;
+    font-size: 14px;
+    border-top: solid;
+    border-top-width: 2px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/*Class style of the 'destaque' page*/
+.lisDestaq{color: #2255AA;
+    list-style-type: katakana;
+}
+.itemDestaq{width: 430px;
+    height: 120px;
+    padding: 10px
+}
+.itemDesProd{list-style-type: square;
+}
+.imgDestaq{float: right;
+}
+.precoVelho{text-decoration-line: line-through;
+}
+.preco{color:#FF0000;
+    font-weight: bold;
+}
+
+/*Class style of the 'catalogo' page*/
+.tabInfo{background-color: #FFFFCC;
+    color: #2255AA;
+    margin-top: 6px;
+    font-family: arial, ubuntu;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tabInfo td, .tabInfo th{border: 2px solid;
+    border-width: 2px;
+    border-color: #000000;
+    padding: 6px 12px 6px 12px;
+}
+.linTH{color: #FFFFFF;
+    background-color: #0077BB;
+    vertical-align: middle;
+    text-align: center;
+}
+.colTH{color: #005599;
+    background-color: #FFCC77;
+    text-align: left;
+}
