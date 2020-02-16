@@ -19,9 +19,82 @@
             <a class='botao' href="Compras.html">Compras</a>
         </nav>
         <section>
+            <form method="POST" action='mailto:contato@manganime.com.br,subject="COMPRA"'>
+                <fieldset class='fsDados'>
+                    <legend>Dados Pessoais</legend>
+                    <label for="nome">Nome</label>:
+                    <input type='text' name='nome' id='nome' class='inpGrande'><br>
 
-            <h1>Under Construction</h1>
+                    <label for="end">Endereço</label>:
+                    <input type='text' name='end' id='end' class='inpGrande'><br>
 
+                    <div classe='meiaLinEsq'>
+                        <label for="cpf">CPF</label>:
+                        <input type='text' name='cpf' id='cpf' class='impMedio'><br>
+
+                        <label for="tel">Telefone</label>:
+                        <input type='tel' name='tel' id='tel' class='impTelef'><br>
+
+                        <label for="cel">Celular</label>:
+                        <input type='tel' name='cel' id='cel' class='impTelef'><br>
+                        </div>
+                    <div classe='meiaLinDir'>
+                        <fieldset class='fsDir'>
+                            <legend >Nascimento</legend>
+                            <input type='number' name='nasc' id='nasc' class='numDD'>/
+                            <input type='number' name='nasc' id='nasc' class='numDD'>/
+                            <input type='number' name='nasc' id='nasc' class='numQD'>
+                        </fieldset>
+                        <fieldset class='fsDir'>
+                            <legend>Genero</legend>
+                            <input type='radio' name='sex' id='sex' checked> mas
+                            <input type='radio' name='sex' id='sex'> fem
+                            <input type='radio' name='sex' id='sex'> outro
+                        </fieldset>
+                    </div>
+                </fieldset>
+                <fieldset class='fsDados'>
+                    <legend>Seleção de Produtos e Pagamentos</legend>
+
+                    <div>
+                        Produtos:
+                        <select>
+                            <option value=a>a</option>
+                            <option value=b>b</option>
+                        </select>
+                    </div>
+
+                    <fieldset class='fsEsq'>
+                        <legend>Dados do Cartão</legend>
+                        <fieldset>
+                            <legend>Bandeira</legend>
+                            <input type='radio' name='sex' id='sex' value='Visa'> Visa
+                            <input type='radio' name='sex' id='sex' value='Master'> Master
+                            <input type='radio' name='sex' id='sex' value='Amek'> Amex
+                        </fieldset>
+                        
+                        <label for="val">Validade</label>:
+                        <input type='number' name='val' id='val' class='numDD'>/
+                        <input type='number' name='val' id='val' class='numQD'><br>
+
+                        <label for="card">Número</label>:
+                        <input type='text' name='card' id='card' class='impNCC'><br>
+                    </fieldset>
+                    
+                    <div class='meiaLinDir'>
+                        <textarea>
+                        
+                        </textarea><br>
+                        
+                        <label for="preco">valor</label>:
+                        <input type='text' name='preco' id='card' class='impMedio'><br>
+                    </div>
+                </fieldset>
+                <div class=botoes>
+                    <input type="button" action=submit value=Enviar>
+                    <input type="button" action=reset value=Limpar>
+                </div>
+            </form>
         </section>
         <footer>
             <p class=ender>

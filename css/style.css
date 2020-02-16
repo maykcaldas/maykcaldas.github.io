@@ -109,3 +109,51 @@ footer{clear:both;
     background-color: #FFCC77;
     text-align: left;
 }
+
+/*Class style of the 'compras' page*/
+fieldset{color: #2255AA;
+    background-color: #FFFFCC;
+    margin: 20px 10px 0px 10px;
+}
+.fsDados{width: 510px;
+}
+.fsEsq{float: left;
+    margin: 0px 0px 6px 0px;
+}
+.fsDir{float: right;
+    margin: 0px 0px 6px 0px;
+    width: 220px;
+}
+.meiaLinDir{height: 220px;
+    float: right;
+    margin-bottom: 6px;
+}
+.meiaLinEsq{height: 220px;
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 18px;
+}
+.divLinha{width: 220px;
+    margin-bottom: 18px;
+}
+.colPri{float: left;
+    display: block;
+    width: 84px;
+}
+.elemDir{float: right;
+    display: block;
+}
+.botoes{text-align: left;
+margin: 12px 10px 12px 10px;
+}
+.inpGrande{width: 390px;
+}
+.impMedio{width: 120px;
+}
+.impTelef{width: 90px;
+}
+.numDD{width: 40px;
+}
+.numQD{width: 60px;
+}
+.impNCC{width: 130px;}
