@@ -19,80 +19,112 @@
             <a class='botao' href="Compras.html">Compras</a>
         </nav>
         <section>
-            <form method="POST" action='mailto:contato@manganime.com.br,subject="COMPRA"'>
+            <h3>Compras</h3>
+            <form method="POST" action='mailto:maykcaldas@gmail.com'>  <!-- action='mailto:contato@manganime.com.br,subject="COMPRA"'> -->
                 <fieldset class='fsDados'>
                     <legend>Dados Pessoais</legend>
-                    <label for="nome">Nome</label>:
-                    <input type='text' name='nome' id='nome' class='inpGrande'><br>
-
-                    <label for="end">Endereço</label>:
-                    <input type='text' name='end' id='end' class='inpGrande'><br>
-
-                    <div classe='meiaLinEsq'>
-                        <label for="cpf">CPF</label>:
-                        <input type='text' name='cpf' id='cpf' class='impMedio'><br>
-
-                        <label for="tel">Telefone</label>:
-                        <input type='tel' name='tel' id='tel' class='impTelef'><br>
-
-                        <label for="cel">Celular</label>:
-                        <input type='tel' name='cel' id='cel' class='impTelef'><br>
+                    <div class='divLinha'>
+                        <label for="nome"><span class='colPri'>Nome:</span></label>
+                        <input class='inpGrande' type='text' name='nome' id='nome' required>
+                    </div>
+                    <div class='divLinha'>
+                        <label for="end"><span class='colPri'>Endereço:</span></label>
+                        <input type='text' name='end' id='end' class='inpGrande' required>
+                    </div>
+                    <div class='meiaLinEsq'>
+                        <div class='divLinha'>
+                            <label for="cpf"><span class='colPri'>CPF:</span></label>
+                            <input type='text' pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name='cpf' id='cpf' class='impMedio' required>
                         </div>
-                    <div classe='meiaLinDir'>
+                        <div class='divLinha'>
+                            <label for="tel"><span class='colPri'>Telefone:</span></label>
+                            <input type='tel' pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}" name='tel' id='tel' class='impTelef'>
+                        </div>
+                        <div class='divLinha'>
+                            <label for="cel"><span class='colPri'>Celular:</span></label>
+                            <input type='tel' pattern="\([0-9]{2}\)[0-9]{4}-[0-9]{4}" name='cel' id='cel' class='impTelef'>
+                        </div>
+                    </div>
+                    <div class=meiaLinDir>
                         <fieldset class='fsDir'>
                             <legend >Nascimento</legend>
-                            <input type='number' name='nasc' id='nasc' class='numDD'>/
-                            <input type='number' name='nasc' id='nasc' class='numDD'>/
-                            <input type='number' name='nasc' id='nasc' class='numQD'>
+                            <input type='number' name='nasc' class='numDD' required>/
+                            <input type='number' name='nasc' class='numDD' required>/
+                            <input type='number' name='nasc' class='numQD' value=1980 required>
                         </fieldset>
                         <fieldset class='fsDir'>
                             <legend>Genero</legend>
-                            <input type='radio' name='sex' id='sex' checked> mas
-                            <input type='radio' name='sex' id='sex'> fem
-                            <input type='radio' name='sex' id='sex'> outro
+                            <input type='radio' name='sex' checked> mas
+                            <input type='radio' name='sex'> fem
+                            <input type='radio' name='sex'> outro
                         </fieldset>
                     </div>
                 </fieldset>
                 <fieldset class='fsDados'>
                     <legend>Seleção de Produtos e Pagamentos</legend>
 
-                    <div>
-                        Produtos:
-                        <select>
-                            <option value=a>a</option>
-                            <option value=b>b</option>
+                    <div class=divLinha>
+                        <label for='prod'>Produtos:</label>
+                        
+                        <select id='prod' name='prod'>
+                            <option value='none'> -------- </option>
+                            <optgroup label="Anime">
+                                <option value=a>Death Note - DVD - Completo</option>
+                                <option value=b>Naruto Shippuden T01 Box 01</option>
+                                <option value=b>Naruto Shippuden T01 Box 02</option>
+                            </optgroup>
+                            <optgroup label="Mangá">
+                                <option value=a>Naruto Gold - 55 Vol.</option>
+                                <option value=b>Attack on Titan - Vol 1-4</option>
+                                <option value=b>Attack on Titan - Vol 5-8</option>
+                                <option value=b>Naruto Box P01 Vol 1-27</option>
+                            </optgroup>
+                            <optgroup label="Action Figure">
+                                <option value=a>Naruto Shippuden - PVC</option>
+                                <option value=b>Ryuk - Death Note - PVC</option>
+                            </optgroup>
                         </select>
+                        <input type="button" value=Comprar>
                     </div>
 
-                    <fieldset class='fsEsq'>
-                        <legend>Dados do Cartão</legend>
-                        <fieldset>
-                            <legend>Bandeira</legend>
-                            <input type='radio' name='sex' id='sex' value='Visa'> Visa
-                            <input type='radio' name='sex' id='sex' value='Master'> Master
-                            <input type='radio' name='sex' id='sex' value='Amek'> Amex
-                        </fieldset>
-                        
-                        <label for="val">Validade</label>:
-                        <input type='number' name='val' id='val' class='numDD'>/
-                        <input type='number' name='val' id='val' class='numQD'><br>
 
-                        <label for="card">Número</label>:
-                        <input type='text' name='card' id='card' class='impNCC'><br>
-                    </fieldset>
-                    
+                    <div class='meiaLinEsq'>
+                        <fieldset class='fsEsq'>
+                            <legend>Dados do Cartão</legend>
+                            <fieldset class='fsEsq'>
+                                <legend>Bandeira</legend>
+                                <input type='radio' name='cardBand' value='Visa' checked> Visa
+                                <input type='radio' name='cardBand' value='Master'> Master
+                                <input type='radio' name='cardBand' value='Amek'> Amex
+                            </fieldset>
+                            
+                            <div class='dadoCart'>
+                                <label for="val"><span class='colPri'>Validade:</span></label>
+                                <input type='number' pattern='[0-1][0-9]' name='cardVal' class='numDD' required>/
+                                <input type='number' pattern='[2][0][0-9]{2}' name='cardVal' class='numQD' required>
+                            </div>
+                            <div class='dadoCart'>
+                                <label for="card"><span class='colPri'>Número:</span></label>
+                                <input type='text' name='cardNum' id='card' class='impNCC' required>
+                            </div>
+                        </fieldset>
+                    </div>
+
                     <div class='meiaLinDir'>
-                        <textarea>
+                        <div class='elemDir'>
+                            <textarea rows='8' cols='20'>
                         
-                        </textarea><br>
-                        
-                        <label for="preco">valor</label>:
-                        <input type='text' name='preco' id='card' class='impMedio'><br>
+                            </textarea>
+                        </div>
+                        <div class='elemDir'>
+                            <label for="preco">Valor: R$</label>
+                            <input type='text' name='preco' id='card' class='impMedio'>
+                        </div>
                     </div>
                 </fieldset>
                 <div class=botoes>
-                    <input type="button" action=submit value=Enviar>
-                    <input type="button" action=reset value=Limpar>
+                    <input type="submit" value=Enviar>
+                    <input type="reset" value=Limpar>
                 </div>
             </form>
         </section>

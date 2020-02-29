@@ -1,3 +1,8 @@
+/* Cleaning default browser styles */
+/* I would do that, but some attributes I 
+don't know were changed.  */
+/* *{clear: both;} */
+
 /*General style of the website*/
 body{background-color: #FFFFFF;
     color: #BB0D0D;
@@ -14,40 +19,26 @@ nav{display:block;
     font-size: 18px;
     font-family: "Muli", "sans-serif";
 }
+.menu{margin: 1px auto;
+}
 nav a{text-decoration: none;
-    color: #FF0000;}
-    a:visited{color: #EE0000
-    }
+    color: #FF0000;
+}
+a:visited{color: #EE0000
+}
 header{display:block;
     padding: 0px;
     border-bottom: 0px;
     margin-bottom: 0px;
     text-align: center;
 }
+.imgLogo{margin-bottom: 4px;
+    padding-bottom: 4px;
+}
 a {text-decoration: none;
     color: #DD0000;
 }
 a:visited{color: #CC0000
-}
-section{display:block;
-}
-footer{clear:both;
-}
-
-/*Class style of the initial page*/
-.imgLogo{margin-bottom: 4px;
-    padding-bottom: 4px;
-}
-.apres{display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px; 
-    padding: 10px;
-    text-align: center;
-    font-size: 18px;
-}
-.menu{margin: 1px auto;
 }
 .botao{display: inline-block;
     margin-top: 0px;
@@ -60,6 +51,21 @@ footer{clear:both;
     padding-right: 4px;
     width: 100px;
 }
+section{display:block;
+}
+footer{clear:both;
+}
+
+/*Class style of the initial page*/
+.apres{display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+}
 .ender{text-align: center;
     font-size: 14px;
     border-top: solid;
@@ -71,6 +77,9 @@ footer{clear:both;
 /*Class style of the 'destaque' page*/
 .lisDestaq{color: #2255AA;
     list-style-type: katakana;
+    width: 40%;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .itemDestaq{width: 430px;
     height: 120px;
@@ -92,8 +101,8 @@ footer{clear:both;
     margin-top: 6px;
     font-family: arial, ubuntu;
     border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .tabInfo td, .tabInfo th{border: 2px solid;
     border-width: 2px;
@@ -116,24 +125,27 @@ fieldset{color: #2255AA;
     margin: 20px 10px 0px 10px;
 }
 .fsDados{width: 510px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .fsEsq{float: left;
     margin: 0px 0px 6px 0px;
+    width: 235px;
 }
 .fsDir{float: right;
     margin: 0px 0px 6px 0px;
     width: 220px;
 }
-.meiaLinDir{height: 220px;
+.meiaLinDir{width: 220px;
     float: right;
     margin-bottom: 6px;
 }
-.meiaLinEsq{height: 220px;
+.meiaLinEsq{width: 220px;
     float: left;
     margin-top: 6px;
     margin-bottom: 18px;
 }
-.divLinha{width: 220px;
+.divLinha{width: 490px;
     margin-bottom: 18px;
 }
 .colPri{float: left;
@@ -141,10 +153,13 @@ fieldset{color: #2255AA;
     width: 84px;
 }
 .elemDir{float: right;
-    display: block;
+    /* margin: 0px 6px 0px 0px; */
+    margin-top: 20px;
 }
 .botoes{text-align: left;
-margin: 12px 10px 12px 10px;
+    margin: 12px 10px 12px 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 .inpGrande{width: 390px;
 }
@@ -156,4 +171,10 @@ margin: 12px 10px 12px 10px;
 }
 .numQD{width: 60px;
 }
-.impNCC{width: 130px;}
+.impNCC{width: 130px;
+}
+
+.dadoCart{float:left;
+    width: 250px;
+    margin-top: 20px;
+}
