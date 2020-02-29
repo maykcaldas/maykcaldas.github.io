@@ -78,8 +78,8 @@ footer{clear:both;
 .lisDestaq{color: #2255AA;
     list-style-type: katakana;
     width: 40%;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .itemDestaq{width: 430px;
     height: 120px;
@@ -96,13 +96,17 @@ footer{clear:both;
 }
 
 /*Class style of the 'catalogo' page*/
+.titulo{width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .tabInfo{background-color: #FFFFCC;
     color: #2255AA;
     margin-top: 6px;
     font-family: arial, ubuntu;
     border-collapse: collapse;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .tabInfo td, .tabInfo th{border: 2px solid;
     border-width: 2px;
@@ -125,8 +129,8 @@ fieldset{color: #2255AA;
     margin: 20px 10px 0px 10px;
 }
 .fsDados{width: 510px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
 }
 .fsEsq{float: left;
     margin: 0px 0px 6px 0px;
@@ -158,8 +162,9 @@ fieldset{color: #2255AA;
 }
 .botoes{text-align: left;
     margin: 12px 10px 12px 10px;
-    /* margin-left: auto;
-    margin-right: auto; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 .inpGrande{width: 390px;
 }
