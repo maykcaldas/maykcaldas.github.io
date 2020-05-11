@@ -7,34 +7,36 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
         <link rel=stylesheet type='text/css' href='../css/style.css'>
+        <script src="../js/ONT.js"></script>
     </head>
-    <body>
+    <body onLoad="clean(compraForm);">
         <header>
             <img class='imgLogo' src='../img/OtakuOnTitan_topo.png'>
         </header>
         <nav class='menu'>
-            <a class='botao' href="OtakuOnTitan.html">Inicial</a>
-            <a class='botao' href="Destaques.html">Destaques</a>
-            <a class='botao' href="Catalogo.html">Catálogo</a>
-            <a class='botao' href="Compras.html">Compras</a>
+            <!-- Por mais que não faça o menor sentido abrir tanta nova aba -->
+            <a class='botao' target="_blank" href="../html/OtakuOnTitan.html">Inicial</a>
+            <a class='botao' target="_blank" href="../html/Destaques.html">Destaques</a>
+            <a class='botao' target="_blank" href="../html/Catalogo.html">Catálogo</a>
+            <a class='botao' target="_blank" href="../html/Compras.html">Compras</a>
         </nav>
         <section>
             <h3 class='titulo'>Compras</h3>
-            <form method="POST" action='mailto:maykcaldas@gmail.com'>  <!-- action='mailto:contato@manganime.com.br,subject="COMPRA"'> -->
+            <form id="compraForm" method="POST" target="_blank" action='mailto:maykcaldas@gmail.com'>  <!-- action='mailto:contato@manganime.com.br,subject="COMPRA"'> -->
                 <fieldset class='fsDados'>
                     <legend>Dados Pessoais</legend>
                     <div class='divLinha'>
                         <label for="nome"><span class='colPri'>Nome:</span></label>
-                        <input class='inpGrande' type='text' name='nome' id='nome' required>
+                        <input class='inpGrande' type='text' name='nome' id='nome'>
                     </div>
                     <div class='divLinha'>
                         <label for="end"><span class='colPri'>Endereço:</span></label>
-                        <input type='text' name='end' id='end' class='inpGrande' required>
+                        <input type='text' name='end' id='end' class='inpGrande'>
                     </div>
                     <div class='meiaLinEsq'>
                         <div class='divLinha'>
-                            <label for="cpf"><span class='colPri'>CPF:</span></label>
-                            <input type='text' pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name='cpf' id='cpf' class='impMedio' required>
+                            <label for="cpf"><span class='colPri' >CPF:</span></label>
+                            <input type='text' id="CPF" onChange="checaCPF(this);" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" name='cpf' id='cpf' class='impMedio'>
                         </div>
                         <div class='divLinha'>
                             <label for="tel"><span class='colPri'>Telefone:</span></label>
@@ -48,15 +50,15 @@
                     <div class=meiaLinDir>
                         <fieldset class='fsDir'>
                             <legend >Nascimento</legend>
-                            <input type='number' name='nascD' class='numDD' required>/
-                            <input type='number' name='nascM' class='numDD' required>/
-                            <input type='number' name='nascA' class='numQD' value=1980 required>
+                            <input type='number' name='nascD' class='numDD' >/
+                            <input type='number' name='nascM' class='numDD' >/
+                            <input type='number' name='nascA' class='numQD' value=1980>
                         </fieldset>
                         <fieldset class='fsDir'>
                             <legend>Genero</legend>
-                            <input type='radio' name='sexM' checked> mas
-                            <input type='radio' name='sexF'> fem
-                            <input type='radio' name='sexO'> outro
+                            <input type='radio' name='sex' value='sexM' checked> mas
+                            <input type='radio' name='sex' value='sexF'> fem
+                            <input type='radio' name='sex' value='sexO'> outro
                         </fieldset>
                     </div>
                 </fieldset>
@@ -67,24 +69,24 @@
                         <label for='prod'>Produtos:</label>
                         
                         <select id='prod' name='prod'>
-                            <option value='none'> -------- </option>
+                            <option value=0> -------- </option>
                             <optgroup label="Anime">
-                                <option value=a>Death Note - DVD - Completo</option>
-                                <option value=b>Naruto Shippuden T01 Box 01</option>
-                                <option value=b>Naruto Shippuden T01 Box 02</option>
+                                <option value=1>Death Note - DVD - Completo</option>
+                                <option value=2>Naruto Shippuden T01 Box 01</option>
+                                <option value=3>Naruto Shippuden T01 Box 02</option>
                             </optgroup>
                             <optgroup label="Mangá">
-                                <option value=a>Naruto Gold - 55 Vol.</option>
-                                <option value=b>Attack on Titan - Vol 1-4</option>
-                                <option value=b>Attack on Titan - Vol 5-8</option>
-                                <option value=b>Naruto Box P01 Vol 1-27</option>
+                                <option value=4>Naruto Gold - 55 Vol.</option>
+                                <option value=5>Attack on Titan - Vol 1-4</option>
+                                <option value=6>Attack on Titan - Vol 5-8</option>
+                                <option value=7>Naruto Box P01 Vol 1-27</option>
                             </optgroup>
                             <optgroup label="Action Figure">
-                                <option value=a>Naruto Shippuden - PVC</option>
-                                <option value=b>Ryuk - Death Note - PVC</option>
+                                <option value=8>Naruto Shippuden - PVC</option>
+                                <option value=9>Ryuk - Death Note - PVC</option>
                             </optgroup>
                         </select>
-                        <input type="button" value=Comprar>
+                        <input type="button" onClick="addCompra();" value=Comprar>
                     </div>
 
 
@@ -100,25 +102,23 @@
                             
                             <div class='dadoCart'>
                                 <label for="val"><span class='colPri'>Validade:</span></label>
-                                <input type='number' pattern='[0-1][0-9]' name='cardVal' class='numDD' required>/
-                                <input type='number' pattern='[2][0][0-9]{2}' name='cardVal' class='numQD' required>
+                                <input type='number' pattern='[0-1][0-9]' name='cardVal' class='numDD'>/
+                                <input type='number' pattern='[2][0][0-9]{2}' name='cardVal' class='numQD'>
                             </div>
                             <div class='dadoCart'>
                                 <label for="card"><span class='colPri'>Número:</span></label>
-                                <input type='text' name='cardNum' id='card' class='impNCC' required>
+                                <input type='text' name='cardNum' id='card' class='impNCC'>
                             </div>
                         </fieldset>
                     </div>
 
                     <div class='meiaLinDir'>
                         <div class='elemDir'>
-                            <textarea rows='8' cols='20'>
-                        
-                            </textarea>
+                            <textarea id='listaCompras' rows='8' cols='27' readonly></textarea>
                         </div>
                         <div class='elemDir'>
                             <label for="preco">Valor: R$</label>
-                            <input type='text' name='preco' id='card' class='impMedio'>
+                            <input type='text' name='preco' id='precoCompras' class='impMedio' readonly>
                         </div>
                     </div>
                 </fieldset>

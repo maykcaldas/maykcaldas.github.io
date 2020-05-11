@@ -81,18 +81,33 @@ footer{clear:both;
     margin-left: auto;
     margin-right: auto;
 }
-.itemDestaq{width: 430px;
+/* .itemDestaq{width: 430px;
     height: 120px;
-    padding: 10px
+    padding: 10px 
+}*/
+.itemDesProd{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-.itemDesProd{list-style-type: square;
+.imgDestaq{
+    margin: 0 auto;
+    display: block;
 }
-.imgDestaq{float: right;
+.tituloDestaq{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .precoVelho{text-decoration-line: line-through;
 }
 .preco{color:#FF0000;
     font-weight: bold;
+}
+#destaqFecha{
+    margin: 0 auto;
+    display: block;
 }
 
 /*Class style of the 'catalogo' page*/
@@ -121,6 +136,24 @@ footer{clear:both;
 .colTH{color: #005599;
     background-color: #FFCC77;
     text-align: left;
+}
+#fotoCatalogo{
+    height: 300px;
+    width: 300px;
+    color: #226699;
+    border: solid 3px;
+    padding: 12px;
+    background-color: white;
+}
+#precoCatalogo{
+    width: 300px;
+    padding: 1px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color:#FF0000;
+    font-weight: bold;
 }
 
 /*Class style of the 'compras' page*/

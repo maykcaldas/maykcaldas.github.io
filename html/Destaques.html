@@ -7,47 +7,28 @@
         <meta charset="utf-8">
         <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
         <link rel=stylesheet type='text/css' href='../css/style.css'>
+        <script src="../js/ONT.js"></script>
     </head>
     <body>
         <header>
             <img class='imgLogo' src='../img/OtakuOnTitan_topo.png'>
         </header>
         <nav class='menu'>
-            <a class='botao' href="OtakuOnTitan.html">Inicial</a>
-            <a class='botao' href="Destaques.html">Destaques</a>
-            <a class='botao' href="Catalogo.html">Catálogo</a>
-            <a class='botao' href="Compras.html">Compras</a>
+            <!-- Por mais que não faça o menor sentido abrir tanta nova aba -->
+            <a class='botao' target="_blank" href="../html/OtakuOnTitan.html">Inicial</a>
+            <a class='botao' target="_blank" href="../html/Destaques.html">Destaques</a>
+            <a class='botao' target="_blank" href="../html/Catalogo.html">Catálogo</a>
+            <a class='botao' target="_blank" href="../html/Compras.html">Compras</a>
         </nav>
         <section>
             <h3 class='titulo'>Destaques/promoções</h3>
+
             <ol class="lisDestaq">
-                <li class="itemDestaq">Death Note
-                    <img class='imgDestaq' src='../img/DeathNoteA110.jpg'>
-                    <ul class="itemDesProd">
-                        <li>Série Completa</li>
-                        <li>Formato DVD - 5 discos</li>
-                        <li>Preço: de R$<span class='precoVelho'>90,00</span> 
-                            por R$<span class='preco'>85,00</span></li>
-                    </ul>
-                </li>
-                <li class="itemDestaq">Naruto Gold
-                    <img class='imgDestaq' src='../img/NarutoGoldA110.jpg'>
-                    <ul class="itemDesProd">
-                        <li>Mangá em Protuguês</li>
-                        <li>55 volumes</li>
-                        <li>Preço: de R$<span class='precoVelho'>1100,00</span> 
-                            por R$<span class='preco'>1000,00</span></li>
-                    </ul>
-                </li>
-                <li class="itemDestaq">Naruto Shippuden
-                    <img class='imgDestaq' src='../img/NarutoFigA110.jpg'>
-                    <ul class="itemDesProd">
-                        <li>Action figure em PVC</li>
-                        <li>Preço: de R$<span class='precoVelho'>250,00</span> 
-                            por R$<span class='preco'>210,00</span></li>
-                    </ul>
-                </li>
+                <li class="itemDestaq"><a href="#" onClick="mostraDestaque(0);">Death Note</a></li>
+                <li class="itemDestaq"><a href="#" onClick="mostraDestaque(1);">Naruto Gold</a></li>
+                <li class="itemDestaq"><a href="#" onClick="mostraDestaque(2);">Naruto Shippuden</a></li>
             </ol>
+
         </section>
         <footer>
             <p class=ender>
