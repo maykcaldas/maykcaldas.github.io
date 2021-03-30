@@ -77,7 +77,7 @@ table {
   transition: 500ms;
 }
 .heroNote a:hover{
-  colow: #fff;
+  color: #fff;
   animation-name: linkTransition;
   animation-duration: 500ms;
 }
@@ -183,7 +183,14 @@ cite, em {
 .nav {
   text-align: right;
 }
-
+.nav li{
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
 
 /*
   ========================================
@@ -369,3 +376,19 @@ body {
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+  
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
+}
+.speaker{
+  margin-bottom: 44px;
+}
