@@ -412,3 +412,22 @@ body {
   vertical-align: top;
   margin: -66px 0 22px 0;
 }
+
+/*
+  ========================================
+  Veune
+  ========================================
+*/
+
+.venue-theater{
+  margin-bottom: 66px;
+}
+
+.venue-hotel{
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+.venue-map{
+  height: 264px;
+}
