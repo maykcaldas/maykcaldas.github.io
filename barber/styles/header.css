@@ -1,0 +1,75 @@
+header{
+  background: #bbb;
+}
+
+.header {
+  max-width: 80%;
+  width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo>img{
+  width: 25%;
+  margin: 10px 0;
+  transition: 400ms all;
+}
+
+.logo>img:hover{
+  opacity: 0.5;
+}
+
+nav ul{
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a{
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+nav a:hover{
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px){
+  .logo>img{
+    width: 100%;
+    transition: 400ms all;
+  }
+
+  .logo{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .nav{
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .nav ul{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .nav li{
+    margin: 10px 10px;
+  }
+
+  .nav a{
+    font-size: 14px;
+  }
+}

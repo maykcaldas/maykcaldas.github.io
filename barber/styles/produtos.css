@@ -1,0 +1,42 @@
+.lista-produtos {
+  margin: 50px auto;
+  width: 940px;
+  min-width: 90%;
+  text-align: center;
+}
+
+.produto{
+  display: inline-block;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 0 1.5%;
+}	
+
+.produto:hover{
+  color: #C78C19;
+  border-color: #C78C19;
+  scale: 1.1;
+}
+
+.produto h2{
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.produto p{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+@media screen and (max-width: 480px){
+  .lista-produtos{
+    width: 100%;
+  }
+
+  .produto{
+    margin: 25px 0;
+  }
+}
