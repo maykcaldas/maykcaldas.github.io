@@ -24,11 +24,6 @@ toggleButton.addEventListener("click", () => {
         toggleButton.classList.toggle("dark-mode-icon");
     }
 
-    toggleButton.classList.toggle("icon solid fa-moon");
-    toggleButton.classList.toggle("light-mode-icon");
-    toggleButton.classList.toggle("dark-mode-icon");
-
     // Save user preference
-    
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
 });
