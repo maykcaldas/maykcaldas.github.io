@@ -2316,3 +2316,66 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #1F1F2F;
+  color: #E0E0E0;
+}
+
+body.dark-mode a {
+  color: #BB86FC;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+  color: #FFFFFF;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea, 
+body.dark-mode select {
+  background-color: #2F2F3F;
+  color: #E0E0E0;
+  border: 1px solid #BB86FC;
+}
+
+body.dark-mode strong {
+  color: #BB86FC;
+} 
+
+body.dark-mode hr {
+  border-bottom: 1px solid #BB86FC;
+}
+
+/* Dark mode sidebar styles */
+body.dark-mode #sidebar {
+  background-color: #2F2F3F;
+}
+
+body.dark-mode #sidebar .inner {
+  background-color: #2F2F3F;
+}
+
+body.dark-mode #menu ul li {
+  border-color: rgba(187, 134, 252, 0.2);
+}
+
+body.dark-mode #menu ul a,
+body.dark-mode #menu ul span {
+  color: #E0E0E0;
+}
+
+body.dark-mode #menu ul a:hover,
+body.dark-mode #menu ul span:hover {
+  color: #BB86FC;
+}
+
+body.dark-mode #menu ul a.opener:before,
+body.dark-mode #menu ul span.opener:before {
+  color: #BB86FC;
+}
