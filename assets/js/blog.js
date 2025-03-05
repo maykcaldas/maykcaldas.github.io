@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", () => {
             posts.forEach(post => {
                 tags = new Set([...tags, ...post.tags]);
 
-                const postElement = document.createElement("div");
+                const postElement = document.createElement("a");
+                postElement.href = `post.html?file=${post.file}`;
+                postElement.classList.add("post", "blog-card");
                 postElement.innerHTML = `
-                <div class="posts">
                     <article>
-                        <h2><a href="post.html?file=${post.file}">${post.title}</a></h2>
+                        <h2>${post.title}</h2>
                         <p>${post.date}</p>
                         <p>Tags: ${post.tags.join(", ")}</p>
                     </article>
-                </div>
                 `;
                 postsContainer.appendChild(postElement);
             });
@@ -35,9 +35,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 posts.filter(post => selectedTag === "all" || post.tags.includes(selectedTag))
                     .forEach(post => {
-                        const postElement = document.createElement("div");
+                        const postElement = document.createElement("a");
+                        postElement.href = `post.html?file=${post.file}`;
+                        postElement.classList.add("post", "blog-card");
                         postElement.innerHTML = `
-                            <h2><a href="post.html?file=${post.file}">${post.title}</a></h2>
+                            <h2>${post.title}</h2>
                             <p>${post.date}</p>
                             <p>Tags: ${post.tags.join(", ")}</p>
                         `;
