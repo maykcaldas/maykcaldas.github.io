@@ -1,5 +1,11 @@
 [
     {
+        "title": "My second Blog Post",
+        "date": "2025-03-29",
+        "tags": ["intro", "update"],
+        "file": "second-post.md"
+    },
+    {
         "title": "Exploring AI in Chemistry",
         "date": "2025-03-10",
         "tags": ["AI", "chemistry"],
