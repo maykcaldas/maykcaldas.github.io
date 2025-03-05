@@ -2317,6 +2317,33 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.blog-card {
+  background: #f5f6f7;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #ddd;
+}
+.blog-card:hover {
+  transform: translateY(-5px);
+  background: #e8e8e8;
+}
+.blog-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  height: 100px;
+}
+.blog-card p {
+  margin: 10px 0;
+}
+
 /* Dark Mode Styles */
 body.dark-mode {
   background-color: #1F1F2F;
@@ -2378,4 +2405,43 @@ body.dark-mode #menu ul span:hover {
 body.dark-mode #menu ul a.opener:before,
 body.dark-mode #menu ul span.opener:before {
   color: #BB86FC;
+}
+body.dark-mode .blog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+body.dark-mode .blog-card {
+  background: #3F3F4F;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #ddd;
+}
+body.dark-mode .blog-card:hover {
+  transform: translateY(-5px);
+  background: #2F2F3F;
+}
+body.dark-mode .blog-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  height: 100px;
+}
+body.dark-mode .blog-card p {
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  body .blog-container { 
+      grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body .blog-container {
+      grid-template-columns: repeat(1, 1fr) !important;
+  }
 }
