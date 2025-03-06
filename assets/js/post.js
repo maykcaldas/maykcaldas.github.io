@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const file = params.get("file");
 
     if (file) {
-        fetch(`../posts/${file}`) // Adjusted to correctly fetch markdown posts
+        fetch(`/posts/${file}`) // Adjusted to correctly fetch markdown posts
             .then(response => response.text())
             .then(content => {
                 document.getElementById("post-content").innerHTML = marked.parse(content);
