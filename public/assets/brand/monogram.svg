@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="210 280 660 390" fill="none">
+  <title>Mayk Caldas circuit monogram</title>
+  <!-- Vector reconstruction of the owner's supplied logo. -->
+  <g stroke="#65538c" stroke-width="6" stroke-linejoin="miter">
+    <path d="M347 381H367M274 408H367M296 436H308L337 465H367M309 489H367M241 516H367M275 573H298L331 539H414M347 570H414M474 333V408M513 349V441M540 371V454M625 325V383H569V426M714 339H757M714 433H734L760 408H774M714 460H772M714 489H772M714 516H838M666 539H748L783 573H803M666 591H736M639 605H618M566 565V632M501 565V618M442 608H467V565M442 516H493M588 516H639M442 539H520M562 539H639M442 565H639"/>
+    <circle cx="338" cy="381" r="9"/><circle cx="265" cy="408" r="9"/>
+    <circle cx="287" cy="436" r="9"/><circle cx="300" cy="489" r="9"/>
+    <circle cx="232" cy="516" r="9"/><circle cx="266" cy="573" r="9"/>
+    <circle cx="338" cy="570" r="9"/><circle cx="474" cy="324" r="9"/>
+    <circle cx="513" cy="340" r="9"/><circle cx="540" cy="362" r="9"/>
+    <circle cx="625" cy="316" r="9"/><circle cx="766" cy="339" r="9"/>
+    <circle cx="783" cy="408" r="9"/><circle cx="781" cy="460" r="9"/>
+    <circle cx="781" cy="489" r="9"/><circle cx="847" cy="516" r="9"/>
+    <circle cx="812" cy="573" r="9"/><circle cx="745" cy="591" r="9"/>
+    <circle cx="609" cy="605" r="9"/><circle cx="566" cy="641" r="9"/>
+    <circle cx="501" cy="627" r="9"/>
+  </g>
+  <g fill="#65538c">
+    <path d="M367 293V516H394V356L540 492L687 356V518H714V293L540 450Z"/>
+    <path d="M414 405V625H394V560H367V652H442V469L540 558L639 469V652H714V560H687V625H666V405L540 519Z"/>
+  </g>
+</svg>

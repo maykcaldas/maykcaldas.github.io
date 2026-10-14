@@ -1,0 +1,5 @@
+node_modules/
+dist/
+src/content/posts.generated.json
+.DS_Store
+.preview/

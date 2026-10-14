@@ -1,0 +1,39 @@
+{
+  "name": "maykcaldas-personal-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content": "node --import tsx scripts/generate-content.ts",
+    "dev": "vite",
+    "typecheck": "npm run content && tsc --noEmit",
+    "build": "npm run typecheck && vite build && node --import tsx scripts/prerender.tsx",
+    "preview": "node --import tsx scripts/preview.ts",
+    "test": "npm run content && vitest run",
+    "check": "npm run build && npm test && node --import tsx --test tests/build.test-node.ts"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "dependencies": {
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.7",
+    "@types/jsdom": "30.0.0",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/sanitize-html": "2.16.2",
+    "@vitejs/plugin-react": "6.1.2",
+    "entities": "8.1.0",
+    "jsdom": "29.1.1",
+    "marked": "18.1.0",
+    "sanitize-html": "2.18.0",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.3",
+    "vitest": "4.1.11"
+  }
+}

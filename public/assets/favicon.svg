@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Mayk Caldas</title>
+  <rect width="64" height="64" rx="12" fill="#48405f"/>
+  <!-- Core double-M silhouette simplified for browser-tab sizes. -->
+  <path fill="#e0d9f1" d="M10 10V37H16V23L32 38L48 23V37H54V10L32 30Z M20 29V49H16V42H10V55H26V43L32 49L38 43V55H54V42H48V49H44V29L32 41Z"/>
+</svg>
