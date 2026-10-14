@@ -67,9 +67,9 @@ export function Home() {
             <br className="desktop-break" /> and discover what comes next.
           </p>
           <p className="hero-role">
-            Member of technical staff at{' '}
-            <a href="https://www.futurehouse.org/">
-              FutureHouse <Arrow />
+            Founding Member of Technical Staff at{' '}
+            <a href="https://edisonscientific.com/">
+              Edison Scientific <Arrow />
             </a>
             <br />
             PhD in Chemical Sciences.
